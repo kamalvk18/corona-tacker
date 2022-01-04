@@ -1,0 +1,17 @@
+body{
+	
+	background-image : url(https://images.unsplash.com/photo-1584254520678-31fe4dce5306?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80) ;
+	background-size: cover;
+    font-family: 'Lato', sans-serif;
+    background-position: center;
+    color: white;
+	letter-spacing: 2px;
+	font-weight: 800;
+	}
+
+ul{
+	color:white;
+	text-transform:uppercase;
+}
+
+

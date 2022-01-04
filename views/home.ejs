@@ -1,0 +1,35 @@
+<link rel="stylesheet" type="text/css" href="app.css">
+<link href="https://fonts.googleapis.com/css?family=space+mono:400,700" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<div>
+	<br>
+	<h1>
+		GET DATA UNTIL DESIRED DATE
+	</h1>
+	<br>
+	<p>
+		ENTER COUNTRY NAME
+	</p>
+	
+	<form action="/search" method="GET">
+	<input list="countries" name="country">
+  	<datalist id="countries">
+	 <%for(var i =0; i <= Object.keys(data).length; i++){%>
+			<option value="<%= Object.keys(data)[i] %>">
+	<%}	%> 
+   </datalist> <br> <br>
+	<p>
+		ENTER DATE IN THIS FORMAT <br> YYYY-MM-DD
+	</p>
+		<ul>
+			<li>Note: Works only upto yesterday's date <strong>(Dont enter today's date)</strong></li>
+		</ul>
+		
+	<input type="text" name="date" placeholder="date">
+	<button>
+		Submit
+	</button>
+</form>
+
+	 
+</div>
